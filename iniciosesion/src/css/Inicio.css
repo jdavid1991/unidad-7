@@ -1,0 +1,24 @@
+.root{
+  width: '80vh';
+  height: '80vh';
+  background: red;
+}
+
+.paper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form{
+  padding-bottom: 5%;
+  width: 300px;
+
+}
+
+.pizza{
+  margin-top: 50px;
+  background: black;
+  border-radius: 9px;
+  box-shadow: 3px 3px 19px black;
+}
