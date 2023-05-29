@@ -6,10 +6,11 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
+import Productos from './productos';
 
 export default function Profile() {
 
-  const [anchorEl, setAnchorEL] = React.useState(null);
+  const [anchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
   const username = JSON.parse(localStorage.getItem('username'))
 
@@ -23,7 +24,7 @@ export default function Profile() {
   return (
     <>
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
+      <AppBar position="static" style={{background: '#12AA4F'}}>
         <Toolbar>
           <IconButton
             size="large"
@@ -42,7 +43,7 @@ export default function Profile() {
       </AppBar>
     </Box>
 
-    <h1>Hola Mundo</h1>
+    <Productos />
     </>
   );
 }

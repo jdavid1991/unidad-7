@@ -35,7 +35,7 @@ function Singin() {
   });
 
   if(response.id!==0){
-    swal('success', response.username, 'success', {
+    swal('ok', response.username, 'success', {
       buttons: false,
       timer: 2000,
   })
@@ -50,7 +50,6 @@ function Singin() {
   swal('error', response.username, 'error')
   }
   }
-
   
   return (
     

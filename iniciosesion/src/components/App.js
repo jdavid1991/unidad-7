@@ -1,7 +1,8 @@
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import '../css/App.css';
 import Singin from './Inicio';
-import Profile from './profile'
+import Profile from './profile';
+import Productos from './productos'
 
 function App() {
 
@@ -16,6 +17,7 @@ if(!token){
     <BrowserRouter>
       <Routes>
         <Route path="/profile" element ={< Profile />} />
+          <Route path="/profile/productos" element ={< Productos />} />
         <Route path="/" element ={< Profile />} />
       </Routes>
     </BrowserRouter>
