@@ -3,7 +3,7 @@ import '../css/productos.css'
 
 function Productos() {
 
-  const ListadoCarros = [
+  const ListadoProductos = [
     {
       name: "Hamburguesa Sencilla",
       url:
@@ -40,7 +40,7 @@ function Productos() {
     }
   ];
 
-  const [ListadoFiltrado, setListadoFiltrado] = useState(ListadoCarros);  
+  const [ListadoFiltrado, setListadoFiltrado] = useState(ListadoProductos);  
 
   const [MarcaSeleccionada, setMarcaSeleccionada] = useState("");
 
@@ -87,7 +87,7 @@ function Productos() {
 
 
   useEffect (() => {
-    var DataFiltrado = FiltradoxMarca(ListadoCarros);
+    var DataFiltrado = FiltradoxMarca(ListadoProductos);
     DataFiltrado = FiltradoxAnio(DataFiltrado);
     setListadoFiltrado(DataFiltrado);
   },[MarcaSeleccionada,AnioSeleccionado]);
