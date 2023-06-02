@@ -11,7 +11,7 @@ const Productos1 = () => {
           
           <div>
           <h3><Link to={`/productos/${productos.id}`}>{productos.name}</Link></h3>
-          <img className='car-image' src={productos.url}></img>
+          <img className='car-image' src={productos.url} alt='si'></img>
           </div>
   
         </div>
