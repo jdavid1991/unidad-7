@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import '../css/productos.css'
-import ProductosDetalle from './productodetalles';
-import Productos1 from './productos1';
 
 
 function Productos() {
