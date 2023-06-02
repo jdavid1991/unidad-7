@@ -3,6 +3,8 @@ import '../css/App.css';
 import Singin from './Inicio';
 import Profile from './profile';
 import Productos from './productos'
+import ProductosDetalle from './productodetalles';
+import Productos1 from './productos1';
 
 function App() {
 
@@ -18,7 +20,9 @@ if(!token){
       <Routes>
         <Route path="/profile" element ={< Profile />} />
           <Route path="/profile/productos" element ={< Productos />} />
+        <Route path="/productos/:productId" element={<ProductosDetalle />}></Route>
         <Route path="/" element ={< Profile />} />
+        <Route path="/productos1" element ={< Productos1 />} />
       </Routes>
     </BrowserRouter>
     </div>

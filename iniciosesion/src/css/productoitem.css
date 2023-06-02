@@ -1,0 +1,13 @@
+#contendor{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#detalles{
+  text-align: center;
+}
+
+h3{
+  color: red;
+}
