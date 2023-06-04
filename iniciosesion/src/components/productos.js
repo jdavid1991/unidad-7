@@ -128,7 +128,7 @@ function Productos() {
           className={AnioSeleccionado === "Perro" ? "opcionActivo" : "opcionFiltrado" }
           id="Perro"
         > 
-        Perro Caliente.
+        Perro Caliente
         </div>
       </div>
 
