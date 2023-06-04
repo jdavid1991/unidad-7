@@ -122,7 +122,7 @@ function Productos() {
           className={AnioSeleccionado === "Hamburguesa" ? "opcionActivo" : "opcionFiltrado" }
           id="Hamburguesa"
         > 
-        Hamburguesa 
+        Hamburguesa.
         </div>
         <div
           className={AnioSeleccionado === "Perro" ? "opcionActivo" : "opcionFiltrado" }
